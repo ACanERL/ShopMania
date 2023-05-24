@@ -20,7 +20,7 @@ Screen Shot:
 
  
 ![Ekran Görüntüsü (4)](https://github.com/ACanERL/ShopMania/assets/71428865/94fbbee7-df72-495f-a024-60c62d5ba3cd)
-![Ekran Görüntüsü (4)](https://github.com/ACanERL/ShopMania/assets/71428865/2e031b34-08db-40af-a8f8-786ffdf960d1)
+![Ekran Görüntüsü (5)](https://github.com/ACanERL/ShopMania/assets/71428865/24b75cc8-6c2c-4405-b6a5-54ffcc50b1d2)
 ![Ekran Görüntüsü (6)](https://github.com/ACanERL/ShopMania/assets/71428865/de43dea0-5dfc-4613-a7ed-01ebf16fd955)
 
 
