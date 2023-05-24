@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/customToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#363B5B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/back_icon">
+
+        <ImageView
+            android:id="@+id/toolbarImageView"
+            android:layout_width="32dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:background="@drawable/baseline_shopping_bag_24"
+            tools:layout_editor_absoluteX="119dp"
+            tools:layout_editor_absoluteY="10dp" />
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <ImageButton
+            android:id="@+id/favButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:background="#363B5B"
+            android:src="@drawable/baseline_favorite_border_24"
+            tools:layout_editor_absoluteX="355dp"
+            tools:layout_editor_absoluteY="4dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+</androidx.constraintlayout.widget.ConstraintLayout>

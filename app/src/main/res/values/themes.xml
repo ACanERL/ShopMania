@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ShopMania" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/toolbar</item>
+    </style>
+
+    <style name="Theme.ShopMania" parent="Base.Theme.ShopMania" />
+    <style name="progressBar">
+        <item name="colorSecondary">@color/main_color</item>
+    </style>
+
+    <style name="CustomDropDownItemStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:background">@color/white</item>
+    </style>
+</resources>

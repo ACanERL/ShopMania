@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Payment.PaymentScreen">
+
+    <include
+        android:id="@+id/paymentoolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/favToolbarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:text="Payment"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/paymentoolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/paymentoolbar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:text="Your Cart İnformation"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paymentoolbar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="312dp"
+        android:text="Adress"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paymentoolbar" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="360dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Card Number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="360dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Card Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="360dp"
+        android:layout_height="235dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="37dp"
+        android:backgroundTint="#005C5B5B"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <Button
+        android:id="@+id/buttonpay"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#363B5B"
+        android:text="Pay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText">
+
+        <EditText
+            android:id="@+id/editTextText5"
+            android:layout_width="112dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="26dp"
+            android:ems="10"
+            android:hint="Month"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="112dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="10dp"
+            android:ems="10"
+            android:hint="Year"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/editTextText6"
+            android:layout_width="112dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="10dp"
+            android:ems="10"
+            android:hint="CVV"
+            android:inputType="number" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

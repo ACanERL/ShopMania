@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.shopmania.ui.Home.HomeScreen"
+        android:label="Home"
+        tools:layout="@layout/fragment_home_screen">
+        <action
+            android:id="@+id/action_homeScreen_to_productScreen"
+            app:destination="@id/productScreen"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/homeScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartScreen"
+        android:name="com.example.shopmania.ui.cart.CartScreen"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart_screen">
+        <action
+            android:id="@+id/action_cartScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
+        <action
+            android:id="@+id/action_cartScreen_to_paymentScreen"
+            app:destination="@id/paymentScreen"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/paymentScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteScreen"
+        android:name="com.example.shopmania.ui.Favorite.FavoriteScreen"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_favorite_screen" />
+    <fragment
+        android:id="@+id/profilScreen"
+        android:name="com.example.shopmania.ui.Profil.ProfilScreen"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profil_screen" />
+    <fragment
+        android:id="@+id/detailScreen"
+        android:name="com.example.shopmania.ui.Detail.DetailScreen"
+        android:label="Details"
+        tools:layout="@layout/fragment_detail_screen">
+        <action
+            android:id="@+id/action_detailScreen_to_favoriteScreen"
+            app:destination="@id/favoriteScreen"
+            app:popUpTo="@id/detailScreen"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="product"
+            app:argType="com.example.shopmania.data.model.ProductResponseModel" />
+        <action
+            android:id="@+id/action_detailScreen_to_cartScreen"
+            app:destination="@id/cartScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentScreen"
+        android:name="com.example.shopmania.ui.Payment.PaymentScreen"
+        android:label="Payment"
+        tools:layout="@layout/fragment_payment_screen">
+        <action
+            android:id="@+id/action_paymentScreen_to_successScreen"
+            app:destination="@id/successScreen" />
+        <action
+            android:id="@+id/action_paymentScreen_to_cartScreen2"
+            app:destination="@id/cartScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/productScreen"
+        android:name="com.example.shopmania.ui.Product.ProductScreen"
+        android:label="Products"
+        tools:layout="@layout/fragment_product_screen">
+        <action
+            android:id="@+id/action_productScreen_to_detailScreen"
+            app:destination="@id/detailScreen" />
+        <argument
+            android:name="category"
+            app:argType="string"
+            android:defaultValue="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/successScreen"
+        android:name="com.example.shopmania.ui.Success.SuccessScreen"
+        android:label="Success"
+        tools:layout="@layout/fragment_success_screen">
+        <action
+            android:id="@+id/action_successScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+</navigation>
